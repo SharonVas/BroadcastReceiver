@@ -11,12 +11,13 @@ import android.widget.Toast;
 /**
  * Created by anupamchugh on 11/04/16.
  */
-
+//test
 public class ConnectionReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
 
+        Log.d("API123", "" + intent.getAction());
         Log.d("API123", "" + intent.getAction());
 
         if (intent.getAction().equals("com.edu.ness.broadcastreceiver.SOME_ACTION")) {
